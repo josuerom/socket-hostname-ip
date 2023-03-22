@@ -1,14 +1,13 @@
 import socket
 
 def client_program():
-    #host = socket.gethostname()  # as both code is running on same pc
     host = "172.18.0.2"
-    port = 5000  # socket server port number
+    port = 5000
 
     client_socket = socket.socket()  # instantiate
     client_socket.connect((host, port))  # connect to the server
 
-    username = input("Ingrese el nombre: ")  # take input
+    username = input("Ingrese el nombre: ")
     message = input("--> ")
 
     while message.lower().strip() != 'bye':
