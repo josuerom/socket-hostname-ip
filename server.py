@@ -25,7 +25,7 @@ def server_program():
 
     f = open('output.txt', 'a')
     f.write('IP: ' + str(address) + '\n')
-    f.close()
+    #f.close()
 
 if __name__ == '__main__':
     server_program()
